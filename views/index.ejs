@@ -18,7 +18,7 @@
 		<ul>
 			<% for (const quote of quotes) { %>
 				<li data-id="<%=quote._id%>">
-					<%= quote.quote %> - <i><%= quote.name %></i>
+					<span><%= quote.quote %></span> - <i><%= quote.name %></i>
 					<button class="updateButton">Update</button>
 					<button class="deleteButton">Delete</button>
 				</li>
