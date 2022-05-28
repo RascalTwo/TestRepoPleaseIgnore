@@ -18,10 +18,13 @@
 		<ul>
 			<% for (const quote of quotes) { %>
 				<li data-id="<%=quote._id%>">
-					<%= quote.quote %> - <i><%= quote.name %></i> <button className="updateButton">Update</button> <button className="deleteButton">Delete</button>
+					<%= quote.quote %> - <i><%= quote.name %></i>
+					<button class="updateButton">Update</button>
+					<button class="deleteButton">Delete</button>
 				</li>
 			<% } %>
 		</ul>
+		<script src="index.js"></script>
 	</body>
 
 </html>
