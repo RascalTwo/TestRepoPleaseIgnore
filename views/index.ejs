@@ -9,11 +9,19 @@
 
 	<body>
 		<form action="/quotes" method="POST">
+			<input type="hidden" name="id" />
 			<input type="text" placeholder="name" name="name">
 			<input type="text" placeholder="quote" name="quote">
 			<button type="submit">Submit</button>
 			<button type="reset">Reset</button>
 		</form>
+		<ul>
+			<% for (const quote of quotes) { %>
+				<li data-id="<%=quote._id%>">
+					<%= quote.quote %> - <i><%= quote.name %></i> <button className="updateButton">Update</button> <button className="deleteButton">Delete</button>
+				</li>
+			<% } %>
+		</ul>
 	</body>
 
 </html>
