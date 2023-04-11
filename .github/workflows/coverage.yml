@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   pull_request:
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,5 +17,5 @@ jobs:
       - run: npm ci
       - name: Jest Annotations & Coverage
         uses: mattallty/jest-github-action@v1.0.3
-        with:
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
