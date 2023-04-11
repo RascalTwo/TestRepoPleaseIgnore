@@ -16,3 +16,5 @@ jobs:
       - run: npm ci
       - name: Jest Annotations & Coverage
         uses: mattallty/jest-github-action@v1.0.3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
