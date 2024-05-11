@@ -7,7 +7,8 @@
     "dev": "NODE_ENV=development nodemon --watch server server/server.js",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "npm run build"
   },
   "proxy": "http://localhost:5050",
   "dependencies": {
