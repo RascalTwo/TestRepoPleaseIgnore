@@ -1,0 +1,10 @@
+name: Reusable Workflow Example
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-reusable-workflow:
+    uses: .github/workflows/reusable-workflow.yml
+    with:
+      message: "Hello, World!"
