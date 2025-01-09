@@ -1,4 +1,4 @@
-name: Reusable Workflow Example
+name: Reusable Workflow Invocation
 
 on:
   workflow_dispatch:
