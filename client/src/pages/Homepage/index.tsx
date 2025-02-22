@@ -10,7 +10,7 @@ type HomepageProps = {
 const Homepage = ({ setUser, isLoggedIn }: HomepageProps) => {
   return (
     <div>
-      8
+      9
       <main>
         {isLoggedIn ? (
           <div
