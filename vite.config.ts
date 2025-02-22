@@ -9,7 +9,7 @@ export default defineConfig({
     VitePWA({
       strategies: 'generateSW',
       workbox: {
-        maximumFileSizeToCacheInBytes: 10000000,
+        maximumFileSizeToCacheInBytes: 100000000,
       },
       registerType: 'autoUpdate',
       includeAssets: ['favicon-16x16.png', 'apple-touch-icon.png', 'safari-pinned-tab.svg'],
