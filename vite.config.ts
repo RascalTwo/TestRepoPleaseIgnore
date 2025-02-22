@@ -7,6 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      strategies: 'generateSW',
+      workbox: {
+        maximumFileSizeToCacheInBytes: 10000000,
+      },
       registerType: 'autoUpdate',
       includeAssets: ['favicon-16x16.png', 'apple-touch-icon.png', 'safari-pinned-tab.svg'],
       manifest: {
@@ -28,7 +32,7 @@ export default defineConfig({
           "theme_color": "#ffffff",
           "background_color": "#ffffff",
           "display": "standalone"
-      }
+      },
     })
   ],
 });
