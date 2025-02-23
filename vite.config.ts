@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     VitePWA({
       strategies: 'generateSW',
+      injectRegister: 'inline',
       workbox: {
         maximumFileSizeToCacheInBytes: 100000000,
       },
