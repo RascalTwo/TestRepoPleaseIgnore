@@ -9,11 +9,14 @@ export default defineConfig({
     VitePWA({
       strategies: 'generateSW',
       injectRegister: 'inline',
+      injectManifest: {
+        injectionPoint: undefined
+      },
       workbox: {
         maximumFileSizeToCacheInBytes: 100000000,
       },
       registerType: 'autoUpdate',
-      includeAssets: ['favicon-16x16.png', 'apple-touch-icon.png', 'safari-pinned-tab.svg'],
+      //includeAssets: ['favicon-16x16.png', 'apple-touch-icon.png', 'safari-pinned-tab.svg'],
       manifest: {
           "name": "R2 Holistic Health",
           "short_name": "RHH",
